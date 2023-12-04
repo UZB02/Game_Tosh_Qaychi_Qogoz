@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction: column;
+    gap: 30px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+
+    marquee {
+        font-size: 2em;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-shadow: 0 0 5px #fff;
+        letter-spacing: .5px;
+    }
+
+    .container {
+        .player {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // flex-direction: column;
+            width: 33%;
+            height: 400px;
+            padding: 20px;
+            box-shadow: 0 5px 8px 3px silver;
+
+            span {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+
+            span:hover {
+                transform: rotate(350deg) scale(.95);
+            }
+
+            span:active {
+                transform: scale(1.05);
+            }
+        }
+
+        .result {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 33%;
+            gap: 20px;
+            height: 400px;
+            padding: 20px;
+            box-shadow: 0 5px 8px 3px silver;
+
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+
+        .compyuter {
+            width: 30%;
+            height: 400px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 8px 3px silver;
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
